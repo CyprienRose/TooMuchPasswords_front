@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "nuxt": "0.10.7",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
     "vue-server-renderer": "latest",
     "vuetify": "^0.13.0"
   },
