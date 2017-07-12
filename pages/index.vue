@@ -1,5 +1,5 @@
 <template>
-  <v-app id="back" :style="{ backgroundImage: 'url(/bg.jpg)' }">
+  <v-app id="back" >
     <v-layout column justify-center align-center>
       <v-flex xs12 sm12 md12>
   
@@ -17,7 +17,7 @@
           <v-text-field name="input-1-3" label="Password" :append-icon="e1 ? 'visibility' : 'visibility_off'" :append-icon-cb="() => (e1 = !e1)" :type="e1 ? 'password' : 'text'" single-line prepend-icon="lock_outline"></v-text-field>
   
           <div class="text-xs-center">
-            <v-btn primary flat outline nuxt to="/inspire">Sign In</v-btn>
+            <v-btn primary flat outline nuxt to="/list">Sign In</v-btn>
             <br>
             <a class="ma-10 fpassword" flat  href="/password">Forgot password ?</a>
           </div>
@@ -29,7 +29,7 @@
           <v-text-field name="input-1-3" label="Confirm your password" :append-icon="e1 ? 'visibility' : 'visibility_off'" :append-icon-cb="() => (e1 = !e1)" :type="e1 ? 'password' : 'text'" single-line prepend-icon="lock_outline"></v-text-field>
   
           <div class="text-xs-center">
-            <v-btn primary flat outline nuxt to="/inspire">Sign Up</v-btn>
+            <v-btn primary flat outline nuxt to="/list">Sign Up</v-btn>
           </div>
   
         </div>
@@ -75,5 +75,15 @@ export default {
 
 .activeClass{
   background-color: rgba(0,0,0,.20) !important;
+}
+#back { 
+    
+  background-image: url("/bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  
 }
 </style>

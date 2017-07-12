@@ -1,5 +1,5 @@
 <template>
-    <v-app id="back" :style="{ backgroundImage: 'url(/bg.jpg)' }">
+    <v-app id="back">
         <v-layout column justify-center align-center>
             <v-flex xs12 sm12 md12>
 
@@ -42,6 +42,16 @@ export default {
 }
 </script>
 <style scoped>
+#back { 
+    
+  background-image: url("/bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  
+}
 .title {
     color: #4e342e;
 }
